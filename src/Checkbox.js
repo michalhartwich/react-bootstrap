@@ -7,17 +7,7 @@ import { bsClass, getClassSet, prefix } from './utils/bootstrapUtils';
 const propTypes = {
   inline: React.PropTypes.bool,
   disabled: React.PropTypes.bool,
-  /**
-   * Only valid if `inline` is not set.
-   */
   validationState: React.PropTypes.oneOf(['success', 'warning', 'error']),
-  /**
-   * Attaches a ref to the `<input>` element. Only functions can be used here.
-   *
-   * ```js
-   * <Checkbox inputRef={ref => { this.input = ref; }} />
-   * ```
-   */
   inputRef: React.PropTypes.func,
 };
 
