@@ -14,6 +14,7 @@
     "test": "npm run lint && npm run tests-set && npm run build",
     "tests-set": "karma start --single-run && _mocha --compilers js:babel-core/register test/server/*Spec.js",
     "lint": "eslint ./",
+    "postinstall": "babel-node tools/build-cli.js",
     "release": "release",
     "docs-build": "babel-node tools/build-cli.js --docs-only",
     "docs": "babel-node docs/dev-run",
